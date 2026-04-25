@@ -1,19 +1,21 @@
 const app = document.getElementById('main');
 
-function render(id){
+function render(id, pushState = true){
   if(id === 'about'){
     app.innerHTML = `
     <div class="flex md:flex-row flex-col items-center justify-evenly w-full mt-20 gap-5">
-    <div class="w-1/2 flex justify-center">
-    <img src="https://www.hmifunsri.com/_next/image?url=%2Flogo.png&w=2048&q=75" alt="hmif" class="w-64  cursor-pointer duration-300 hover:scale-105 hover:rotate-6">
-    </div>
-    <div class="w-1/2 flex flex-col p-4">
-    <h2 class="text-yellow-500 text-6xl font-bold ">HMIF UNSRI</h2>
-    <p class="mt-5 text-xl">
-    HMIF UNSRI (Himpunan Mahasiswa Informatika) adalah sebuah Organisasi Kemahasiswaan khusus Jurusan Teknik Informatika 
-    yang bergerak dalam bidang Akademik maupun Non-Akademik yang dapat menjadi wadah bagi para Mahasiswa Jurusan Teknik Informatika.
-    </p>
-    </div>
+      <div class="md:w-1/2 w-full flex justify-center">
+        <img src="https://www.hmifunsri.com/_next/image?url=%2Flogo.png&w=2048&q=75" alt="hmif" class="w-64  cursor-pointer duration-300 hover:scale-105 hover:rotate-6">
+      </div>
+
+      <div class="md:w-1/2 w-full flex flex-col p-4">
+        <h2 class="text-yellow-500 text-6xl font-bold ">HMIF UNSRI</h2>
+
+        <p class="mt-5 text-xl">
+          HMIF UNSRI (Himpunan Mahasiswa Informatika) adalah sebuah Organisasi Kemahasiswaan khusus Jurusan Teknik Informatika 
+          yang bergerak dalam bidang Akademik maupun Non-Akademik yang dapat menjadi wadah bagi para Mahasiswa Jurusan Teknik Informatika.
+        </p>
+      </div>
     </div> 
     `;
   }else if(id === 'profile'){
@@ -85,7 +87,7 @@ function render(id){
     `;
     
     let container = document.createElement('div');
-    container.className = "grid md:grid-cols-3 grid-cols-1 gap-16 mt-9";
+    container.className = "grid md:grid-cols-3 grid-cols-1 gap-52 mt-9";
 
     for(let i = 1; i <= 3; i++){
       staff.forEach(el => {
@@ -114,8 +116,8 @@ function render(id){
   }else if(id === 'kontak'){
     app.innerHTML = `
     <div class="bg-gray-700 flex flex-col p-8 rounded-xl mt-40">
-      <p class="text-amber-50"><span class="text-green-700">Whatsapp</span> - 081234567890</p>
-      <p class="text-amber-50"><span class="text-amber-500">Instagram</span> - @hmif.unsri</p>
+      <a class="text-amber-50" href=""><span class="text-green-700">Whatsapp</span> - +62812 3456 7890</a>
+      <a class="text-amber-50" href="https://www.instagram.com/hmif.unsri"><span class="text-amber-500">Instagram</span> - <span class = "duration-300 hover:text-amber-500">@hmif.unsri</span></a>
     </div>
     `;
   }
