@@ -1,3 +1,3 @@
 ## BELAJAR TAILWIND
 
-- deploy: 
+- deploy: https://aditia-prtm.github.io/belajar-tailwind/
