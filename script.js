@@ -5,11 +5,11 @@ function render(id, pushState = true){
     app.innerHTML = `
     <div class="flex md:flex-row flex-col items-center justify-evenly w-full mt-20 gap-5">
       <div class="md:w-1/2 w-full flex justify-center">
-        <img src="https://www.hmifunsri.com/_next/image?url=%2Flogo.png&w=2048&q=75" alt="hmif" class="w-64  cursor-pointer duration-300 hover:scale-105 hover:rotate-6">
+        <img src="https://www.hmifunsri.com/_next/image?url=%2Flogo.png&w=2048&q=75" alt="hmif" class="w-64 cursor-pointer duration-300 hover:scale-105 hover:rotate-6">
       </div>
 
       <div class="md:w-1/2 w-full flex flex-col p-4">
-        <h2 class="text-yellow-500 text-6xl font-bold ">HMIF UNSRI</h2>
+        <h2 class="text-yellow-600 text-6xl font-bold">HMIF UNSRI</h2>
 
         <p class="mt-5 text-xl">
           HMIF UNSRI (Himpunan Mahasiswa Informatika) adalah sebuah Organisasi Kemahasiswaan khusus Jurusan Teknik Informatika 
@@ -87,7 +87,7 @@ function render(id, pushState = true){
     `;
     
     let container = document.createElement('div');
-    container.className = "grid md:grid-cols-3 grid-cols-1 gap-x-52 gap-y-24 py-5 mt-9";
+    container.className = "grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-x-52 gap-y-24 py-5 mt-9";
 
     for(let i = 1; i <= 3; i++){
       staff.forEach(el => {
@@ -123,4 +123,4 @@ function render(id, pushState = true){
   }
 }
 
-render('about');
+render('akademik');
