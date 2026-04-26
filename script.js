@@ -123,4 +123,4 @@ function render(id, pushState = true){
   }
 }
 
-render('akademik');
+render('about');
