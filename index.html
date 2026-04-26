@@ -8,13 +8,17 @@
   <link rel="stylesheet" href="output.css">
 </head>
 <body class="bg-olive-200 min-h-screen flex flex-col">
-  <nav class="bg-gray-800 text-amber-50 flex md:justify-between justify-center items-center py-4 px-12 sticky">
+  <nav class="bg-gray-800 text-amber-50 flex md:justify-between justify-center items-center md:py-3 py-9 md:px-12 px-6 sticky">
 
-    <div class="md:flex hidden">
-      <p class="text-3xl font-semibold cursor-pointer" onclick="render('about')">HMIF UNSRI</p>
+    <div class="md:flex justify-center items-center gap-4 cursor-pointer group hidden">
+      <img src="https://www.hmifunsri.com/_next/image?url=%2Flogo.png&w=2048&q=75" alt="HMIF" class="h-16 duration-300 hover:-rotate-12">
+      <div class="flex flex-col px-2 py-4">
+        <p class="text-3xl font-semibold">HMIF UNSRI</p>
+        <span class="border border-transparent group-hover:border-amber-500 w-0 group-hover:w-full duration-700"></span>
+      </div>
     </div>
 
-    <div class="flex justify-center items-center gap-10 font-semibold">
+    <div class="flex justify-center items-center gap-10 font-semibold group">
       <a href="#" class="duration-300 hover:text-yellow-500" onclick="render('about')">About</a>
       <a href="#" class="duration-300 hover:text-yellow-500" onclick="render('profile')">Profile</a>
       <a href="#" class="duration-300 hover:text-yellow-500" onclick="render('akademik')">Akademik</a>
@@ -22,8 +26,8 @@
     </div>    
   </nav>
 
-  <div id="main" class="grow py-10 px-14 flex flex-col items-center"> 
-
+  <div id="main" class="grow py-10 lg:px-14 md:px-8 px-4 flex flex-col items-center"> 
+    
   </div>
   <footer class="bg-gray-800 flex justify-center items-center py-4">
     <p class="text-amber-50">© (2026) Adit</p>
