@@ -87,7 +87,7 @@ function render(id, pushState = true){
     `;
     
     let container = document.createElement('div');
-    container.className = "grid md:grid-cols-3 grid-cols-1 gap-52 mt-9";
+    container.className = "grid md:grid-cols-3 grid-cols-1 gap-x-52 gap-y-24 py-5 mt-9";
 
     for(let i = 1; i <= 3; i++){
       staff.forEach(el => {
@@ -123,4 +123,4 @@ function render(id, pushState = true){
   }
 }
 
-render('about');
+render('akademik');
